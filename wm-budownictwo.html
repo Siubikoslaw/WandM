@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Dynamic meta tags set by JS per page -->
+<title id="page-title">Budowa domów Opole – W&amp;M Budownictwo</title>
+<meta name="description" id="page-desc" content="W&M Budownictwo Opole – profesjonalna firma budowlana. Budowa domów, wykończenia wnętrz, remonty. Darmowa wycena w 24h. Zadzwoń: +48 000 000 000">
+<meta name="robots" content="index, follow">
+<meta property="og:site_name" content="W&M Budownictwo">
+<link rel="canonical" id="page-canonical" href="https://wm-budownictwo.pl/">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "W&M Budownictwo",
+  "alternateName": "Witold Gruszka, Maciej Skąpski s.c.",
+  "description": "Profesjonalna firma budowlana z Opola. Budowa domów, wykończenia wnętrz, remonty mieszkań, nadzór budowlany.",
+  "url": "https://wm-budownictwo.pl",
+  "telephone": "+48-000-000-000",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Przykładowa 1",
+    "addressLocality": "Opole",
+    "postalCode": "45-000",
+    "addressRegion": "opolskie",
+    "addressCountry": "PL"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.6751,
+    "longitude": 17.9213
+  },
+  "areaServed": ["Opole", "Województwo Opolskie", "Kędzierzyn-Koźle", "Krapkowice", "Brzeg", "Kluczbork"],
+  "foundingDate": "2023",
+  "priceRange": "$$"
+}
+</script>
+
+<style>
+/* ============================================================
+   CSS VARIABLES & RESET
+   ============================================================ */
+:root {
+  --gold: #C8A96E;
+  --gold-light: #E2C99A;
+  --gold-dark: #A0803C;
+  --dark: #1A1A1A;
+  --dark-2: #2A2A2A;
+  --dark-3: #3A3A3A;
+  --mid: #6B6B6B;
+  --light: #F5F3EF;
+  --white: #FFFFFF;
+  --border: rgba(200,169,110,0.2);
+  --shadow: 0 20px 60px rgba(0,0,0,0.12);
+  --shadow-lg: 0 40px 100px rgba(0,0,0,0.2);
+  --radius: 2px;
+  --nav-h: 80px;
+  --ff-display: 'Playfair Display', Georgia, serif;
+  --ff-body: 'DM Sans', system-ui, sans-serif;
+  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--ff-body); background: var(--white); color: var(--dark); line-height: 1.7; overflow-x: hidden; }
+img { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { border: none; cursor: pointer; font-family: inherit; }
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+.display-xl { font-family: var(--ff-display); font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.02em; }
+.display-lg { font-family: var(--ff-display); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 700; line-height: 1.1; }
+.display-md { font-family: var(--ff-display); font-size: clamp(1.5rem, 2.5vw, 2.2rem); font-weight: 700; line-height: 1.2; }
+.label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); }
+.body-lg { font-size: 1.125rem; line-height: 1.75; color: var(--mid); }
+.body-md { font-size: 1rem; line-height: 1.7; color: var(--mid); }
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.container-wide { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 100px 0; }
+.section-sm { padding: 60px 0; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.flex { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.text-center { text-align: center; }
+.gap-4 { gap: 4px; }
+.gap-8 { gap: 8px; }
+.gap-16 { gap: 16px; }
+.gap-24 { gap: 24px; }
+.gap-32 { gap: 32px; }
+.mt-8 { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mt-32 { margin-top: 32px; }
+.mt-48 { margin-top: 48px; }
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; border-radius: var(--radius); transition: var(--transition); position: relative; overflow: hidden; }
+.btn::before { content: ''; position: absolute; inset: 0; background: rgba(255,255,255,0.1); transform: translateX(-100%); transition: transform 0.4s ease; }
+.btn:hover::before { transform: translateX(0); }
+.btn-primary { background: var(--gold); color: var(--dark); }
+.btn-primary:hover { background: var(--gold-dark); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(200,169,110,0.4); }
+.btn-outline { background: transparent; color: var(--white); border: 1.5px solid rgba(255,255,255,0.4); }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+.btn-dark { background: var(--dark); color: var(--white); }
+.btn-dark:hover { background: var(--dark-2); transform: translateY(-2px); box-shadow: var(--shadow); }
+.btn-call { display: none; position: fixed; bottom: 24px; right: 24px; width: 60px; height: 60px; border-radius: 50%; background: var(--gold); color: var(--dark); z-index: 9999; box-shadow: 0 8px 32px rgba(200,169,110,0.5); font-size: 1.5rem; align-items: center; justify-content: center; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { box-shadow: 0 8px 32px rgba(200,169,110,0.5); } 50% { box-shadow: 0 8px 48px rgba(200,169,110,0.8); } }
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: var(--nav-h); transition: var(--transition); }
+.nav.scrolled { background: rgba(26,26,26,0.97); backdrop-filter: blur(20px); box-shadow: 0 4px 40px rgba(0,0,0,0.3); }
+.nav.transparent { background: transparent; }
+.nav-inner { height: var(--nav-h); display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { display: flex; flex-direction: column; line-height: 1; }
+.nav-logo-main { font-family: var(--ff-display); font-size: 1.5rem; font-weight: 900; color: var(--white); letter-spacing: -0.01em; }
+.nav-logo-sub { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-top: 2px; }
+.nav-links { display: flex; align-items: center; gap: 8px; }
+.nav-link { padding: 8px 16px; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.03em; color: rgba(255,255,255,0.8); border-radius: var(--radius); transition: var(--transition); position: relative; }
+.nav-link::after { content: ''; position: absolute; bottom: 4px; left: 16px; right: 16px; height: 1px; background: var(--gold); transform: scaleX(0); transition: transform 0.3s ease; }
+.nav-link:hover { color: var(--white); }
+.nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
+.nav-link.active { color: var(--white); }
+.nav-cta { margin-left: 16px; }
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; cursor: pointer; }
+.nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--white); transition: var(--transition); }
+.nav-mobile { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; background: var(--dark); padding: 24px; z-index: 999; transform: translateY(-110%); transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); border-top: 1px solid var(--border); }
+.nav-mobile.open { transform: translateY(0); }
+.nav-mobile a { display: block; padding: 14px 0; font-size: 1rem; font-weight: 500; color: rgba(255,255,255,0.85); border-bottom: 1px solid rgba(255,255,255,0.05); }
+.nav-mobile a:hover { color: var(--gold); }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; background: var(--dark); overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 40%, #2a2a1a 100%); }
+.hero-pattern { position: absolute; inset: 0; background-image: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(200,169,110,0.02) 40px, rgba(200,169,110,0.02) 80px); }
+.hero-img-overlay { position: absolute; right: 0; top: 0; width: 55%; height: 100%; background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80') center/cover no-repeat; }
+.hero-img-overlay::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, var(--dark) 0%, rgba(26,26,26,0.85) 40%, rgba(26,26,26,0.5) 100%); }
+.hero-content { position: relative; z-index: 2; max-width: 680px; padding: 120px 0 80px; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(200,169,110,0.1); border: 1px solid rgba(200,169,110,0.3); padding: 8px 20px; border-radius: 100px; margin-bottom: 32px; }
+.hero-badge-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; animation: blink 2s infinite; }
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+.hero-badge-text { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+.hero h1 { color: var(--white); margin-bottom: 24px; }
+.hero h1 em { font-style: normal; color: var(--gold); }
+.hero-sub { font-size: 1.15rem; color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 520px; margin-bottom: 40px; }
+.hero-actions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.hero-stats { display: flex; gap: 40px; margin-top: 64px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.08); }
+.hero-stat-num { font-family: var(--ff-display); font-size: 2.2rem; font-weight: 900; color: var(--white); line-height: 1; }
+.hero-stat-num span { color: var(--gold); }
+.hero-stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-top: 4px; letter-spacing: 0.05em; }
+.hero-scroll { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; color: rgba(255,255,255,0.4); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; animation: float 3s ease-in-out infinite; }
+@keyframes float { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-8px); } }
+.hero-scroll-line { width: 1px; height: 48px; background: linear-gradient(to bottom, rgba(200,169,110,0.6), transparent); }
+
+/* ============================================================
+   SECTION HEADERS
+   ============================================================ */
+.section-header { margin-bottom: 60px; }
+.section-header.center { text-align: center; }
+.section-header h2 { margin-top: 12px; }
+.section-header p { margin-top: 16px; max-width: 600px; }
+.section-header.center p { margin-left: auto; margin-right: auto; }
+.divider { width: 48px; height: 2px; background: var(--gold); margin: 16px 0; }
+.divider.center { margin-left: auto; margin-right: auto; }
+
+/* ============================================================
+   ABOUT MINI (HOME)
+   ============================================================ */
+.about-mini { background: var(--light); }
+.about-mini-img { position: relative; border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/3; }
+.about-mini-img img { width: 100%; height: 100%; object-fit: cover; }
+.about-mini-badge { position: absolute; bottom: -20px; right: -20px; background: var(--gold); color: var(--dark); padding: 24px 28px; font-family: var(--ff-display); }
+.about-mini-badge-num { font-size: 2.5rem; font-weight: 900; line-height: 1; }
+.about-mini-badge-text { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; margin-top: 4px; }
+.values-list { margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+.value-item { display: flex; align-items: flex-start; gap: 16px; }
+.value-icon { width: 40px; height: 40px; background: rgba(200,169,110,0.1); border: 1px solid var(--border); border-radius: var(--radius); flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+.value-text strong { display: block; font-size: 0.95rem; font-weight: 600; color: var(--dark); margin-bottom: 2px; }
+.value-text span { font-size: 0.875rem; color: var(--mid); }
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.services-section { background: var(--dark); }
+.service-card { background: var(--dark-2); border: 1px solid rgba(200,169,110,0.1); border-radius: var(--radius); overflow: hidden; transition: var(--transition); cursor: pointer; }
+.service-card:hover { border-color: var(--gold); transform: translateY(-8px); box-shadow: 0 24px 60px rgba(0,0,0,0.4); }
+.service-card-img { aspect-ratio: 16/10; overflow: hidden; }
+.service-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.service-card:hover .service-card-img img { transform: scale(1.05); }
+.service-card-body { padding: 28px; }
+.service-card-num { font-family: var(--ff-display); font-size: 0.85rem; color: var(--gold); font-weight: 700; letter-spacing: 0.1em; margin-bottom: 12px; }
+.service-card h3 { font-family: var(--ff-display); font-size: 1.3rem; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+.service-card p { font-size: 0.875rem; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 20px; }
+.service-card-link { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; gap: 8px; transition: var(--transition); }
+.service-card-link:hover { gap: 14px; }
+
+/* ============================================================
+   WHY US
+   ============================================================ */
+.why-section { background: var(--white); }
+.why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; background: var(--border); border: 1px solid var(--border); }
+.why-item { background: var(--white); padding: 40px; transition: var(--transition); }
+.why-item:hover { background: var(--light); }
+.why-item-icon { font-size: 2rem; margin-bottom: 16px; }
+.why-item h3 { font-family: var(--ff-display); font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+.why-item p { font-size: 0.875rem; color: var(--mid); line-height: 1.7; }
+
+/* ============================================================
+   REALIZATIONS PREVIEW
+   ============================================================ */
+.realizations-section { background: var(--light); }
+.real-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 280px 280px; gap: 12px; }
+.real-item { position: relative; overflow: hidden; border-radius: var(--radius); cursor: pointer; }
+.real-item.large { grid-row: 1 / 3; }
+.real-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.real-item:hover img { transform: scale(1.08); }
+.real-item-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,26,26,0.85) 0%, transparent 50%); opacity: 0; transition: var(--transition); display: flex; align-items: flex-end; padding: 24px; }
+.real-item:hover .real-item-overlay { opacity: 1; }
+.real-item-label { color: var(--white); font-size: 0.9rem; font-weight: 600; }
+.real-item-sub { color: rgba(255,255,255,0.65); font-size: 0.8rem; }
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials-section { background: var(--dark); }
+.testimonial-card { background: var(--dark-2); border: 1px solid rgba(200,169,110,0.1); border-radius: var(--radius); padding: 36px; transition: var(--transition); }
+.testimonial-card:hover { border-color: var(--gold); }
+.stars { color: var(--gold); font-size: 1rem; margin-bottom: 16px; letter-spacing: 2px; }
+.testimonial-text { font-size: 0.95rem; color: rgba(255,255,255,0.75); line-height: 1.75; font-style: italic; margin-bottom: 24px; }
+.testimonial-author { display: flex; align-items: center; gap: 14px; }
+.author-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--ff-display); font-weight: 700; color: var(--dark); font-size: 1rem; }
+.author-name { font-weight: 600; color: var(--white); font-size: 0.9rem; }
+.author-loc { font-size: 0.8rem; color: var(--gold); }
+
+/* ============================================================
+   CTA BAND
+   ============================================================ */
+.cta-band { background: var(--gold); padding: 80px 0; }
+.cta-band h2 { font-family: var(--ff-display); font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 900; color: var(--dark); margin-bottom: 12px; }
+.cta-band p { font-size: 1.05rem; color: rgba(26,26,26,0.7); margin-bottom: 32px; }
+.cta-band .btn-dark { background: var(--dark); color: var(--white); }
+.cta-band .btn-outline-dark { border: 2px solid var(--dark); color: var(--dark); display: inline-flex; align-items: center; gap: 10px; padding: 16px 36px; font-size: 0.9rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; border-radius: var(--radius); transition: var(--transition); }
+.cta-band .btn-outline-dark:hover { background: var(--dark); color: var(--white); }
+.trust-badges { display: flex; gap: 32px; margin-top: 48px; flex-wrap: wrap; }
+.trust-badge { display: flex; align-items: center; gap: 12px; color: rgba(26,26,26,0.8); font-size: 0.875rem; font-weight: 500; }
+.trust-badge-icon { width: 36px; height: 36px; background: rgba(26,26,26,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1rem; }
+
+/* ============================================================
+   AREA COVERAGE
+   ============================================================ */
+.area-section { background: var(--white); }
+.area-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.area-tag { padding: 8px 20px; border: 1px solid var(--border); border-radius: 100px; font-size: 0.85rem; color: var(--mid); transition: var(--transition); }
+.area-tag:hover, .area-tag.featured { border-color: var(--gold); color: var(--gold); background: rgba(200,169,110,0.05); }
+
+/* ============================================================
+   MAP & CONTACT
+   ============================================================ */
+.contact-section { background: var(--light); }
+.contact-info { display: flex; flex-direction: column; gap: 24px; }
+.contact-item { display: flex; align-items: flex-start; gap: 16px; }
+.contact-icon { width: 48px; height: 48px; background: var(--gold); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+.contact-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+.contact-value { font-size: 1rem; font-weight: 500; color: var(--dark); }
+.contact-value a { color: inherit; transition: color 0.3s; }
+.contact-value a:hover { color: var(--gold); }
+.map-embed { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.map-embed iframe { width: 100%; height: 400px; border: none; display: block; }
+
+/* ============================================================
+   FORM
+   ============================================================ */
+.form-card { background: var(--white); border-radius: var(--radius); padding: 40px; box-shadow: var(--shadow); border: 1px solid var(--border); }
+.form-title { font-family: var(--ff-display); font-size: 1.5rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.form-sub { font-size: 0.875rem; color: var(--mid); margin-bottom: 28px; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--dark); margin-bottom: 8px; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 18px; background: var(--light); border: 1.5px solid transparent; border-radius: var(--radius); font-family: var(--ff-body); font-size: 0.95rem; color: var(--dark); transition: border-color 0.3s; outline: none; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); background: var(--white); }
+.form-group textarea { height: 120px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-promise { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--mid); margin-top: 12px; }
+.form-promise-icon { color: var(--gold); }
+
+/* ============================================================
+   PAGE SECTIONS (sub-pages rendered via JS)
+   ============================================================ */
+.page-hero { background: var(--dark); padding: 160px 0 80px; position: relative; overflow: hidden; }
+.page-hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(200,169,110,0.05) 0%, transparent 70%); }
+.page-hero h1 { color: var(--white); position: relative; }
+.page-hero .breadcrumb { display: flex; gap: 8px; align-items: center; margin-bottom: 20px; font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+.page-hero .breadcrumb a { color: rgba(255,255,255,0.4); transition: color 0.3s; }
+.page-hero .breadcrumb a:hover { color: var(--gold); }
+.page-hero .breadcrumb span { color: var(--gold); }
+
+.service-page-content { background: var(--white); }
+.content-cols { display: grid; grid-template-columns: 1fr 340px; gap: 60px; align-items: start; }
+.content-main h2 { font-family: var(--ff-display); font-size: 1.7rem; font-weight: 700; color: var(--dark); margin: 40px 0 16px; }
+.content-main h3 { font-family: var(--ff-display); font-size: 1.25rem; font-weight: 700; color: var(--dark); margin: 28px 0 10px; }
+.content-main p { color: var(--mid); line-height: 1.8; margin-bottom: 16px; }
+.content-main ul { margin: 16px 0 24px 0; }
+.content-main ul li { position: relative; padding-left: 20px; color: var(--mid); margin-bottom: 8px; font-size: 0.95rem; line-height: 1.7; }
+.content-main ul li::before { content: '▸'; position: absolute; left: 0; color: var(--gold); }
+.sidebar-card { background: var(--light); border-radius: var(--radius); padding: 32px; border: 1px solid var(--border); margin-bottom: 24px; }
+.sidebar-card h3 { font-family: var(--ff-display); font-size: 1.1rem; font-weight: 700; color: var(--dark); margin-bottom: 16px; }
+.sidebar-contact-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.sidebar-contact-item:last-child { border-bottom: none; }
+.sidebar-contact-item span:first-child { width: 32px; height: 32px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
+
+.faq-section { background: var(--light); }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q { padding: 24px 0; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 600; font-size: 1rem; color: var(--dark); }
+.faq-q:hover { color: var(--gold); }
+.faq-q .icon { width: 28px; height: 28px; background: rgba(200,169,110,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); flex-shrink: 0; font-size: 1.1rem; transition: var(--transition); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+.faq-a-inner { padding: 0 0 24px; color: var(--mid); font-size: 0.95rem; line-height: 1.75; }
+.faq-item.open .faq-q .icon { transform: rotate(45deg); background: var(--gold); color: var(--dark); }
+.faq-item.open .faq-a { max-height: 300px; }
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+.team-section { background: var(--light); }
+.team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.team-card { background: var(--white); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); transition: var(--transition); }
+.team-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
+.team-card-img { aspect-ratio: 4/3; background: var(--dark); display: flex; align-items: center; justify-content: center; font-size: 5rem; }
+.team-card-body { padding: 28px; }
+.team-card h3 { font-family: var(--ff-display); font-size: 1.3rem; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+.team-card-role { font-size: 0.8rem; color: var(--gold); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; }
+.team-card p { font-size: 0.875rem; color: var(--mid); line-height: 1.7; }
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.gallery-section { background: var(--white); }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.gallery-item { position: relative; aspect-ratio: 4/3; overflow: hidden; border-radius: var(--radius); cursor: pointer; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.gallery-item:hover img { transform: scale(1.08); }
+.gallery-item-overlay { position: absolute; inset: 0; background: rgba(26,26,26,0.7); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; opacity: 0; transition: var(--transition); }
+.gallery-item:hover .gallery-item-overlay { opacity: 1; }
+.gallery-item-title { color: var(--white); font-weight: 600; font-size: 1rem; }
+.gallery-item-desc { color: rgba(255,255,255,0.65); font-size: 0.8rem; margin-top: 4px; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer { background: var(--dark); color: rgba(255,255,255,0.6); padding: 80px 0 40px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 60px; }
+.footer-brand { max-width: 280px; }
+.footer-logo { font-family: var(--ff-display); font-size: 1.8rem; font-weight: 900; color: var(--white); margin-bottom: 8px; }
+.footer-logo-sub { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.footer-desc { font-size: 0.875rem; line-height: 1.7; margin-bottom: 20px; }
+.footer-nap { font-size: 0.8rem; line-height: 1.8; border-left: 2px solid var(--gold); padding-left: 16px; }
+.footer-nap strong { color: var(--white); display: block; margin-bottom: 4px; }
+.footer-col h4 { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+.footer-col a { display: block; font-size: 0.875rem; color: rgba(255,255,255,0.55); margin-bottom: 10px; transition: color 0.3s; }
+.footer-col a:hover { color: var(--white); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 32px; display: flex; justify-content: space-between; align-items: center; }
+.footer-copy { font-size: 0.8rem; }
+.footer-fb { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.06); padding: 8px 20px; border-radius: 100px; font-size: 0.8rem; color: rgba(255,255,255,0.6); transition: var(--transition); }
+.footer-fb:hover { background: rgba(255,255,255,0.12); color: var(--white); }
+
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.fade-in-delay-1 { transition-delay: 0.1s; }
+.fade-in-delay-2 { transition-delay: 0.2s; }
+.fade-in-delay-3 { transition-delay: 0.3s; }
+.fade-in-delay-4 { transition-delay: 0.4s; }
+
+/* ============================================================
+   NOTIFICATIONS
+   ============================================================ */
+.toast { position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--dark); color: var(--white); padding: 16px 28px; border-radius: 100px; font-size: 0.9rem; font-weight: 500; box-shadow: var(--shadow-lg); border: 1px solid var(--gold); opacity: 0; transition: all 0.4s ease; z-index: 99999; pointer-events: none; }
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .real-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .real-item.large { grid-row: auto; grid-column: span 2; }
+  .content-cols { grid-template-columns: 1fr; }
+  .sidebar-card { display: none; }
+}
+@media (max-width: 768px) {
+  :root { --nav-h: 64px; }
+  .section { padding: 60px 0; }
+  .grid-2, .grid-3, .why-grid, .team-grid { grid-template-columns: 1fr; gap: 24px; }
+  .hero-img-overlay { display: none; }
+  .hero-content { max-width: 100%; }
+  .hero-stats { flex-wrap: wrap; gap: 24px; }
+  .nav-links, .nav-cta { display: none; }
+  .nav-hamburger { display: flex; }
+  .nav-mobile { display: block; }
+  .btn-call { display: flex; }
+  .real-grid { grid-template-columns: 1fr; }
+  .real-item.large { grid-column: auto; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .form-row { grid-template-columns: 1fr; }
+  .trust-badges { gap: 16px; }
+  .cta-band .flex { flex-direction: column; gap: 12px; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- MOBILE CALL BUTTON -->
+<a href="tel:+48000000000" class="btn-call flex-center" aria-label="Zadzwoń do nas">📞</a>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✅ Wiadomość wysłana! Odezwiemy się w 24h.</div>
+
+<!-- NAVIGATION -->
+<nav class="nav transparent" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" onclick="navigate('home')">
+        <span class="nav-logo-main">W&M</span>
+        <span class="nav-logo-sub">Budownictwo</span>
+      </a>
+      <div class="nav-links">
+        <a href="#" class="nav-link" onclick="navigate('home')">Strona główna</a>
+        <a href="#" class="nav-link" onclick="navigate('about')">O nas</a>
+        <div style="position:relative;display:inline-block;">
+          <a href="#" class="nav-link" onclick="navigate('services')">Usługi ▾</a>
+        </div>
+        <a href="#" class="nav-link" onclick="navigate('realizations')">Realizacje</a>
+        <a href="#" class="nav-link" onclick="navigate('contact')">Kontakt</a>
+      </div>
+      <a href="#" class="btn btn-primary nav-cta" onclick="navigate('contact')">Darmowa wycena</a>
+      <div class="nav-hamburger" id="hamburger" onclick="toggleMobile()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="nav-mobile" id="mobileNav">
+  <a href="#" onclick="navigate('home');toggleMobile()">🏠 Strona główna</a>
+  <a href="#" onclick="navigate('about');toggleMobile()">👥 O nas</a>
+  <a href="#" onclick="navigate('service-dom');toggleMobile()">🏗️ Budowa domów</a>
+  <a href="#" onclick="navigate('service-wykon');toggleMobile()">🎨 Wykończenia wnętrz</a>
+  <a href="#" onclick="navigate('service-remonty');toggleMobile()">🔧 Remonty mieszkań</a>
+  <a href="#" onclick="navigate('service-nadzor');toggleMobile()">📋 Nadzór budowlany</a>
+  <a href="#" onclick="navigate('realizations');toggleMobile()">📷 Realizacje</a>
+  <a href="#" onclick="navigate('contact');toggleMobile()">📞 Kontakt</a>
+  <a href="#" class="btn btn-primary" style="display:inline-flex;margin-top:16px;" onclick="navigate('contact');toggleMobile()">Darmowa wycena</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<main id="main-content"></main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">W&M</div>
+        <div class="footer-logo-sub">Budownictwo</div>
+        <p class="footer-desc">Profesjonalna firma budowlana z Opola. Budujemy domy, wykańczamy wnętrza i remontujemy z pasją i precyzją od 2023 roku.</p>
+        <div class="footer-nap">
+          <strong>W&M Budownictwo</strong>
+          Witold Gruszka, Maciej Skąpski s.c.<br>
+          ul. Przykładowa 1, 45-000 Opole<br>
+          NIP: 000-000-00-00
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Usługi</h4>
+        <a href="#" onclick="navigate('service-dom')">Budowa domów Opole</a>
+        <a href="#" onclick="navigate('service-wykon')">Wykończenia wnętrz Opole</a>
+        <a href="#" onclick="navigate('service-remonty')">Remonty mieszkań Opole</a>
+        <a href="#" onclick="navigate('service-nadzor')">Nadzór budowlany Opole</a>
+      </div>
+      <div class="footer-col">
+        <h4>Firma</h4>
+        <a href="#" onclick="navigate('about')">O nas</a>
+        <a href="#" onclick="navigate('realizations')">Realizacje</a>
+        <a href="#" onclick="navigate('contact')">Kontakt</a>
+        <a href="#" onclick="navigate('contact')">Darmowa wycena</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <a href="tel:+48000000000">📞 +48 000 000 000</a>
+        <a href="mailto:biuro@wmbudownictwo.pl">✉️ biuro@wmbudownictwo.pl</a>
+        <a href="https://www.facebook.com" target="_blank">📘 Facebook</a>
+        <a href="#" onclick="navigate('contact')">📍 Opole i okolice</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2024 W&M Budownictwo – Witold Gruszka, Maciej Skąpski s.c. | Wszelkie prawa zastrzeżone</div>
+      <a href="https://www.facebook.com" class="footer-fb" target="_blank">📘 Obserwuj nas na Facebooku</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ============================================================
+// PAGE TEMPLATES
+// ============================================================
+
+const pages = {
+
+// ---- HOME PAGE ----
+home: {
+  title: 'Budowa domów Opole – W&M Budownictwo | Firma budowlana',
+  desc: 'W&M Budownictwo – firma budowlana z Opola. Budowa domów, wykończenia wnętrz, remonty. Darmowa wycena w 24h. Generalny wykonawca na terenie woj. opolskiego.',
+  canonical: 'https://wm-budownictwo.pl/',
+  render: () => `
+    <!-- HERO -->
+    <section class="hero" id="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-pattern"></div>
+      <div class="hero-img-overlay"></div>
+      <div class="container">
+        <div class="hero-content fade-in">
+          <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            <span class="hero-badge-text">Firma budowlana Opole – od 2023</span>
+          </div>
+          <h1 class="display-xl">
+            Budowa domów<br>
+            <em>Opole</em> i okolice
+          </h1>
+          <p class="hero-sub">
+            W&M Budownictwo to Twój generalny wykonawca w województwie opolskim. Budujemy domy od podstaw, wykańczamy wnętrza i remontujemy – z precyzją, terminowością i pełną transparentnością.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary" onclick="navigate('contact')">Darmowa wycena w 24h ↗</a>
+            <a href="#" class="btn btn-outline" onclick="navigate('realizations')">Zobacz realizacje</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-num">40<span>+</span></div>
+              <div class="hero-stat-label">Zrealizowanych projektów</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">100<span>%</span></div>
+              <div class="hero-stat-label">Zadowolonych klientów</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">24<span>h</span></div>
+              <div class="hero-stat-label">Czas odpowiedzi na wycenę</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>Przewiń</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT MINI -->
+    <section class="section about-mini">
+      <div class="container">
+        <div class="grid-2">
+          <div class="about-mini-img fade-in">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Ekipa W&M Budownictwo Opole" loading="lazy">
+            <div class="about-mini-badge">
+              <div class="about-mini-badge-num">2023</div>
+              <div class="about-mini-badge-text">Rok założenia</div>
+            </div>
+          </div>
+          <div class="fade-in fade-in-delay-1">
+            <div class="label">O nas</div>
+            <h2 class="display-lg" style="margin-top:12px">Budujemy z pasją,<br>dowozimy w terminie</h2>
+            <p class="body-lg" style="margin-top:20px">W&M Budownictwo to spółka założona przez Witolda Gruszkę i Macieja Skąpskiego – praktyków z wieloletnim doświadczeniem w branży budowlanej. Działamy na terenie Opola i całego województwa opolskiego jako kompleksowy generalny wykonawca.</p>
+            <div class="values-list">
+              <div class="value-item">
+                <div class="value-icon">🏗️</div>
+                <div class="value-text">
+                  <strong>Kompleksowa realizacja</strong>
+                  <span>Od projektu przez budowę aż po wykończenie pod klucz</span>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">📋</div>
+                <div class="value-text">
+                  <strong>Pełna transparentność</strong>
+                  <span>Szczegółowy kosztorys, żadnych ukrytych kosztów</span>
+                </div>
+              </div>
+              <div class="value-item">
+                <div class="value-icon">⏱️</div>
+                <div class="value-text">
+                  <strong>Terminowość</strong>
+                  <span>Dotrzymujemy ustalonych terminów realizacji</span>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-dark" style="margin-top:32px" onclick="navigate('about')">Poznaj nas bliżej →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services-section">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <div class="label">Nasze usługi</div>
+          <h2 class="display-lg" style="color:white;margin-top:12px">Co dla Ciebie robimy</h2>
+          <p class="body-lg" style="color:rgba(255,255,255,0.55);margin-top:16px;margin-left:auto;margin-right:auto">Oferujemy pełen zakres usług budowlanych na terenie Opola i województwa opolskiego. Każdy projekt traktujemy indywidualnie.</p>
+        </div>
+        <div class="grid-4 fade-in">
+          ${serviceCards()}
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="label">Dlaczego W&M</div>
+          <h2 class="display-lg" style="margin-top:12px">Dlaczego klienci nam ufają</h2>
+          <p class="body-lg" style="margin-top:16px">Wybierając W&M Budownictwo, wybierasz partnera, który rozumie Twoje potrzeby i traktuje każdą budowę jak własną.</p>
+        </div>
+        <div class="why-grid fade-in">
+          <div class="why-item">
+            <div class="why-item-icon">🎯</div>
+            <h3>Darmowa wycena w 24 godziny</h3>
+            <p>Skontaktuj się z nami, a w ciągu 24 godzin otrzymasz szczegółową, bezpłatną wycenę bez żadnych zobowiązań. Działamy szybko, bo cenimy Twój czas.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">🔍</div>
+            <h3>Pełna transparentność kosztów</h3>
+            <p>Każda złotówka jest jasno opisana w kosztorysie. Nie ma u nas ukrytych opłat ani nieprzyjemnych niespodzianek na koniec realizacji.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">🏆</div>
+            <h3>Doświadczona ekipa własna</h3>
+            <p>Pracujemy z własną, sprawdzoną ekipą – bez pośredników i podwykonawców z przypadku. Jakość i bezpieczeństwo na każdym etapie budowy.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">📞</div>
+            <h3>Stały kontakt z kierownikiem</h3>
+            <p>Masz bezpośredni kontakt z osobą odpowiedzialną za Twój projekt. Raporty na bieżąco, pełna komunikacja przez cały czas trwania budowy.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">✅</div>
+            <h3>Gwarancja i rękojmia</h3>
+            <p>Na wszystkie wykonane prace udzielamy pisemnej gwarancji. Dbamy o jakość, bo zależy nam na długotrwałych relacjach z klientami.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">🗺️</div>
+            <h3>Lokalna firma – znamy region</h3>
+            <p>Jesteśmy z Opola i doskonale znamy specyfikę lokalnego rynku, przepisów i warunków gruntowych. To przekłada się na sprawniejszą realizację.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REALIZATIONS PREVIEW -->
+    <section class="section realizations-section">
+      <div class="container">
+        <div class="flex-between fade-in" style="align-items:flex-end;margin-bottom:48px;flex-wrap:wrap;gap:20px">
+          <div>
+            <div class="label">Portfolio</div>
+            <h2 class="display-lg" style="margin-top:12px">Nasze realizacje</h2>
+          </div>
+          <a href="#" class="btn btn-dark" onclick="navigate('realizations')">Zobacz wszystkie →</a>
+        </div>
+        <div class="real-grid fade-in">
+          <div class="real-item large">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80" alt="Dom jednorodzinny Opole realizacja W&M Budownictwo" loading="lazy">
+            <div class="real-item-overlay">
+              <div>
+                <div class="real-item-label">Dom jednorodzinny – Opole Grotowice</div>
+                <div class="real-item-sub">Budowa od fundamentów | 180 m²</div>
+              </div>
+            </div>
+          </div>
+          <div class="real-item">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Wykończenie wnętrz Opole" loading="lazy">
+            <div class="real-item-overlay">
+              <div>
+                <div class="real-item-label">Wykończenie pod klucz</div>
+                <div class="real-item-sub">Opole Centrum | 75 m²</div>
+              </div>
+            </div>
+          </div>
+          <div class="real-item">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80" alt="Remont mieszkania Opole" loading="lazy">
+            <div class="real-item-overlay">
+              <div>
+                <div class="real-item-label">Remont mieszkania</div>
+                <div class="real-item-sub">Kędzierzyn-Koźle | 60 m²</div>
+              </div>
+            </div>
+          </div>
+          <div class="real-item">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80" alt="Kuchnia wykończenie wnętrz Opole" loading="lazy">
+            <div class="real-item-overlay">
+              <div>
+                <div class="real-item-label">Wykończenie kuchni i salonu</div>
+                <div class="real-item-sub">Krapkowice | premium</div>
+              </div>
+            </div>
+          </div>
+          <div class="real-item">
+            <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&q=80" alt="Dom energooszczędny budowa Opole" loading="lazy">
+            <div class="real-item-overlay">
+              <div>
+                <div class="real-item-label">Dom energooszczędny</div>
+                <div class="real-item-sub">Brzeg | 140 m²</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <div class="label">Opinie klientów</div>
+          <h2 class="display-lg" style="color:white;margin-top:12px">Co mówią nasi klienci</h2>
+        </div>
+        <div class="grid-3 fade-in">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">„W&M Budownictwo wykonało dla nas kompletny remont mieszkania w Opolu. Terminowość, porządek i świetna komunikacja na każdym etapie. Polecamy z całego serca!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AK</div>
+              <div>
+                <div class="author-name">Anna i Krzysztof W.</div>
+                <div class="author-loc">Opole</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">„Budowa domu to stresujący proces, ale z W&M mieliśmy poczucie pełnej kontroli. Kosztorys był rzetelny, ekipa profesjonalna. Dom oddany zgodnie z harmonogramem."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">MN</div>
+              <div>
+                <div class="author-name">Marek N.</div>
+                <div class="author-loc">Krapkowice</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">„Polecam każdemu, kto szuka solidnej firmy budowlanej w okolicach Opola. Panowie Witold i Maciej to prawdziwi profesjonaliści. Wykończenie wnętrz przeszło nasze oczekiwania."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">JP</div>
+              <div>
+                <div class="author-name">Joanna P.</div>
+                <div class="author-loc">Kluczbork</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREA COVERAGE -->
+    <section class="section-sm area-section">
+      <div class="container">
+        <div class="flex-between" style="flex-wrap:wrap;gap:32px;align-items:flex-start">
+          <div>
+            <div class="label">Obszar działania</div>
+            <h2 class="display-md" style="margin-top:12px">Działamy w całym województwie opolskim</h2>
+            <p class="body-md" style="margin-top:12px;max-width:520px">Firma budowlana W&M Budownictwo obsługuje klientów z Opola i okolic. Dojeżdżamy do wszystkich powiatów województwa opolskiego.</p>
+            <div class="area-tags" style="margin-top:20px">
+              <span class="area-tag featured">Opole</span>
+              <span class="area-tag">Kędzierzyn-Koźle</span>
+              <span class="area-tag">Krapkowice</span>
+              <span class="area-tag">Brzeg</span>
+              <span class="area-tag">Kluczbork</span>
+              <span class="area-tag">Nysa</span>
+              <span class="area-tag">Prudnik</span>
+              <span class="area-tag">Strzelce Opolskie</span>
+              <span class="area-tag">Namysłów</span>
+              <span class="area-tag">Głubczyce</span>
+              <span class="area-tag">Dojazdamy do 100 km</span>
+            </div>
+          </div>
+          <div class="form-card" style="min-width:320px;max-width:380px">
+            ${quickForm()}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    ${ctaBand()}
+  `
+},
+
+// ---- ABOUT PAGE ----
+about: {
+  title: 'O nas – W&M Budownictwo | Firma budowlana Opole',
+  desc: 'Poznaj historię W&M Budownictwo – spółki Witolda Gruszki i Macieja Skąpskiego z Opola. Profesjonalni budowlańcy z pasją do precyzyjnej roboty.',
+  canonical: 'https://wm-budownictwo.pl/o-nas',
+  render: () => `
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#" onclick="navigate('home')">Strona główna</a> › <span>O nas</span></div>
+        <div class="label">Kim jesteśmy</div>
+        <h1 class="display-lg" style="margin-top:12px;max-width:700px">Profesjonalna firma budowlana z Opola – z pasją i doświadczeniem</h1>
+        <p class="body-lg" style="color:rgba(255,255,255,0.6);margin-top:20px;max-width:600px">Jesteśmy W&M Budownictwo – firma budowlana, która stawia na jakość, transparentność i długofalowe relacje z klientami w Opolu i całym województwie opolskim.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <div class="fade-in">
+            <div class="label">Nasza historia</div>
+            <h2 class="display-md" style="margin-top:12px">Od 2023 roku budujemy domy i marzenia mieszkańców Opola</h2>
+            <p class="body-md" style="margin-top:20px">W&M Budownictwo zostało założone w 2023 roku przez Witolda Gruszkę i Macieja Skąpskiego – dwóch budowlańców z wieloletnim stażem w branży, którzy postanowili połączyć swoje doświadczenia, by oferować usługi budowlane na najwyższym poziomie.</p>
+            <p class="body-md" style="margin-top:16px">Mimo że firma działa stosunkowo krótko, w tym czasie zrealizowaliśmy ponad 40 projektów – od budowy domów jednorodzinnych w okolicach Opola, przez kompleksowe wykończenia wnętrz, aż po remonty mieszkań w Kędzierzynie-Koźlu, Krapkowicach i Brzegu.</p>
+            <p class="body-md" style="margin-top:16px">Naszą misją jest sprawienie, by budowa lub remont były dla klienta możliwie bezstresowe. Stawiamy na jasną komunikację, rzetelne kosztorysy i dotrzymywanie ustalonych terminów – bo wiemy, że to właśnie tych rzeczy klienci oczekują od generalnego wykonawcy.</p>
+          </div>
+          <div class="fade-in fade-in-delay-1">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="W&M Budownictwo ekipa Opole" loading="lazy" style="border-radius:2px;width:100%;aspect-ratio:4/3;object-fit:cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <div class="label">Nasz zespół</div>
+          <h2 class="display-lg" style="margin-top:12px">Ludzie za W&M Budownictwo</h2>
+        </div>
+        <div class="team-grid fade-in">
+          <div class="team-card">
+            <div class="team-card-img">👷‍♂️</div>
+            <div class="team-card-body">
+              <h3>Witold Gruszka</h3>
+              <div class="team-card-role">Współzałożyciel – Kierownik Budowy</div>
+              <p>Witold odpowiada za nadzór nad realizacją projektów budowlanych. Jego wieloletnie doświadczenie w budownictwie jednorodzinnym przekłada się na precyzję wykonania każdego etapu – od fundamentów aż po dach. Specjalizuje się w budowie domów energooszczędnych w okolicach Opola.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card-img">🏗️</div>
+            <div class="team-card-body">
+              <h3>Maciej Skąpski</h3>
+              <div class="team-card-role">Współzałożyciel – Wykończenia i Remonty</div>
+              <p>Maciej to ekspert od wykończeń wnętrz i remontów. Doskonale rozumie oczekiwania klientów i przekłada je na piękne, funkcjonalne wnętrza. Nadzoruje wszystkie projekty wykończeniowe realizowane przez W&M Budownictwo na terenie Opola i województwa opolskiego.</p>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:48px;background:var(--white);border:1px solid var(--border);border-radius:2px;padding:40px;" class="fade-in">
+          <div class="label">Nasze wartości</div>
+          <h2 class="display-md" style="margin-top:12px;margin-bottom:32px">Co nas wyróżnia na opolskim rynku budowlanym</h2>
+          <div class="grid-3">
+            <div>
+              <div style="font-size:2rem;margin-bottom:12px">🤝</div>
+              <h3 style="font-family:var(--ff-display);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:8px">Uczciwość</h3>
+              <p style="font-size:0.875rem;color:var(--mid);line-height:1.7">Mówimy wprost, co można zrobić, za ile i kiedy. Nie obiecujemy rzeczy niemożliwych, a jeśli coś się zmienia – informujemy o tym niezwłocznie.</p>
+            </div>
+            <div>
+              <div style="font-size:2rem;margin-bottom:12px">🔬</div>
+              <h3 style="font-family:var(--ff-display);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:8px">Precyzja</h3>
+              <p style="font-size:0.875rem;color:var(--mid);line-height:1.7">Każdy detal ma znaczenie. Dbamy o wykończenie każdego centymetra, bo wiemy, że to właśnie szczegóły decydują o jakości całego projektu.</p>
+            </div>
+            <div>
+              <div style="font-size:2rem;margin-bottom:12px">🌱</div>
+              <h3 style="font-family:var(--ff-display);font-size:1.1rem;font-weight:700;color:var(--dark);margin-bottom:8px">Odpowiedzialność</h3>
+              <p style="font-size:0.875rem;color:var(--mid);line-height:1.7">Za każdy projekt bierzemy pełną odpowiedzialność – od podpisania umowy aż do odbioru i przekazania gwarancji.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    ${ctaBand()}
+  `
+},
+
+// ---- SERVICE: BUDOWA DOMOW ----
+'service-dom': {
+  title: 'Budowa domów Opole – W&M Budownictwo | Generalny wykonawca',
+  desc: 'Budowa domów jednorodzinnych w Opolu i woj. opolskim. Kompleksowa realizacja od projektu po wykończenie. Darmowa wycena w 24h. Zadzwoń!',
+  canonical: 'https://wm-budownictwo.pl/budowa-domow-opole',
+  render: () => servicePageTemplate({
+    slug: 'budowa-domow-opole',
+    breadcrumb: 'Budowa domów Opole',
+    h1: 'Budowa domów Opole – kompleksowa realizacja pod klucz',
+    lead: 'Szukasz sprawdzonej firmy budowlanej do budowy domu w Opolu lub okolicach? W&M Budownictwo to generalny wykonawca z doświadczeniem w budowie domów jednorodzinnych, energooszczędnych i letniskowych na terenie całego województwa opolskiego.',
+    img: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80',
+    imgAlt: 'Budowa domu jednorodzinnego Opole W&M Budownictwo',
+    content: `
+      <h2>Dlaczego warto zlecić budowę domu firmie W&M Budownictwo?</h2>
+      <p>Budowa domu to jedna z największych inwestycji w życiu. Wybór odpowiedniego generalnego wykonawcy w Opolu ma kluczowe znaczenie dla jakości, terminowości i kosztów całej realizacji. W&M Budownictwo oferuje kompleksową obsługę – od analizy projektu, przez prace ziemne i fundamenty, po stan surowy zamknięty i wykończenie wnętrz.</p>
+      <p>Jako lokalna firma budowlana z Opola doskonale znamy specyfikę gruntów i warunki budowlane w województwie opolskim. Pracujemy z własną, sprawdzoną ekipą – bez przypadkowych podwykonawców. Każdy projekt prowadzimy z pełną transparentnością kosztów i stałym kontaktem z kierownikiem budowy.</p>
+      
+      <h2>Zakres usług budowy domu w Opolu</h2>
+      <p>Realizujemy wszystkie etapy budowy domu jednorodzinnego na terenie Opola i województwa opolskiego:</p>
+      <ul>
+        <li>Analiza projektu budowlanego i doradztwo techniczne</li>
+        <li>Prace ziemne i przygotowanie terenu pod budowę</li>
+        <li>Fundamenty i prace żelbetowe</li>
+        <li>Ściany nośne, stropy i konstrukcja dachowa</li>
+        <li>Dach – pokrycie, obróbki blacharskie, rynny</li>
+        <li>Stolarka okienna i drzwiowa</li>
+        <li>Instalacje elektryczne, hydrauliczne, grzewcze</li>
+        <li>Ocieplenie budynku (ETICS/wełna mineralna)</li>
+        <li>Tynki, podłogi, wykończenia wnętrz</li>
+        <li>Prace zewnętrzne i zagospodarowanie terenu</li>
+      </ul>
+      
+      <h2>Budowa domu jednorodzinnego w Opolu – jak wygląda proces?</h2>
+      <h3>1. Bezpłatna wycena i analiza projektu</h3>
+      <p>Pierwszym krokiem jest kontakt z naszym biurem. W ciągu 24 godzin umówimy się na spotkanie lub bezpłatną konsultację telefoniczną. Przeanalizujemy Twój projekt i przygotujemy szczegółowy kosztorys – bez żadnych zobowiązań.</p>
+      <h3>2. Umowa i harmonogram</h3>
+      <p>Podpisujemy przejrzystą umowę, która chroni obie strony. Ustalamy harmonogram prac i kamienie milowe projektu. Każdy etap jest jasno opisany z terminem i kosztem.</p>
+      <h3>3. Realizacja pod stałym nadzorem</h3>
+      <p>Przez cały czas budowy masz bezpośredni kontakt z kierownikiem budowy. Regularnie informujemy o postępach prac. Na życzenie klienta organizujemy cotygodniowe spotkania na placu budowy.</p>
+      <h3>4. Odbiór i gwarancja</h3>
+      <p>Po zakończeniu prac przeprowadzamy wspólny odbiór techniczny. Udzielamy pisemnej gwarancji na wykonane prace i dostarczamy kompletną dokumentację powykonawczą.</p>
+
+      <h2>Budujemy domy w Opolu i okolicach</h2>
+      <p>Jako firma budowlana z Opola działamy na terenie całego województwa opolskiego. Realizowaliśmy projekty m.in. w Krapkowicach, Kędzierzynie-Koźlu, Brzegu, Kluczborku, Strzelcach Opolskich i Nysie. Skontaktuj się z nami – dojeżdżamy do klientów w promieniu 100 km od Opola.</p>
+    `,
+    faqs: [
+      { q: 'Ile kosztuje budowa domu w Opolu?', a: 'Koszt budowy domu w stanie surowym zamkniętym w Opolu wynosi obecnie od 2 500 do 3 800 zł/m², w zależności od projektu, standardu i materiałów. Dom pod klucz to koszt od 4 000 do 6 000+ zł/m². Przygotujemy bezpłatny, szczegółowy kosztorys po analizie Twojego projektu.' },
+      { q: 'Jak długo trwa budowa domu jednorodzinnego?', a: 'Standardowa budowa domu jednorodzinnego (ok. 150 m²) trwa od 12 do 24 miesięcy, w zależności od złożoności projektu, warunków atmosferycznych i dostępności materiałów. Budowa w stanie surowym zamkniętym to zazwyczaj 6-10 miesięcy.' },
+      { q: 'Czy W&M Budownictwo pomaga z uzyskaniem pozwolenia na budowę?', a: 'Tak – współpracujemy ze sprawdzonymi architektami i biurami projektowymi w Opolu. Możemy pomóc w kompleksowym przygotowaniu dokumentacji i uzyskaniu pozwolenia na budowę lub zgłoszenia robót budowlanych.' },
+      { q: 'Czy wykonujecie domy energooszczędne i pasywne?', a: 'Tak. Mamy doświadczenie w budowie domów energooszczędnych (klasa A+) i pasywnych. Stosujemy materiały i technologie zapewniające niskie zapotrzebowanie na energię – co przekłada się na realne oszczędności przez lata użytkowania.' },
+    ]
+  })
+},
+
+// ---- SERVICE: WYKOŃCZENIA ----
+'service-wykon': {
+  title: 'Wykończenia wnętrz Opole – W&M Budownictwo | Pod klucz',
+  desc: 'Profesjonalne wykończenia wnętrz w Opolu. Mieszkania i domy pod klucz – kafelkowanie, malowanie, podłogi, instalacje. Darmowa wycena w 24h.',
+  canonical: 'https://wm-budownictwo.pl/wykonczenia-wnetrz-opole',
+  render: () => servicePageTemplate({
+    slug: 'wykonczenia-wnetrz-opole',
+    breadcrumb: 'Wykończenia wnętrz Opole',
+    h1: 'Wykończenia wnętrz Opole – mieszkania i domy pod klucz',
+    lead: 'Planujesz wykończyć nowe mieszkanie lub dom w Opolu? W&M Budownictwo realizuje kompleksowe wykończenia wnętrz pod klucz – od projektu aranżacji, przez prace budowlane, aż po montaż mebli i sprzątanie końcowe.',
+    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
+    imgAlt: 'Wykończenie wnętrz mieszkanie Opole W&M Budownictwo',
+    content: `
+      <h2>Kompleksowe wykończenia wnętrz w Opolu i województwie opolskim</h2>
+      <p>Wykończenie wnętrz to jeden z kluczowych etapów każdej inwestycji budowlanej. W W&M Budownictwo podchodzimy do niego holistycznie – koordynujemy wszystkie prace i dostawców, by efekt końcowy spełniał oczekiwania klienta w ustalonym budżecie i terminie.</p>
+      <p>Realizujemy wykończenia wnętrz w Opolu zarówno w mieszkaniach deweloperskich, jak i w nowo wybudowanych domach jednorodzinnych. Oferujemy standard podstawowy, podwyższony i premium – zawsze dopasowany do potrzeb i możliwości klienta.</p>
+      
+      <h2>Co obejmuje wykończenie wnętrz pod klucz?</h2>
+      <ul>
+        <li>Tynkowanie ścian i sufitów (tynki maszynowe, gipsowe)</li>
+        <li>Wylewki podłogowe i przygotowanie pod posadzki</li>
+        <li>Układanie płytek ceramicznych i kamiennych</li>
+        <li>Malowanie ścian i sufitów (gruntowanie, szpachlowanie, malowanie)</li>
+        <li>Układanie paneli, parkietu lub LVP</li>
+        <li>Instalacje elektryczne (punkty świetlne, gniazdka, tablice rozdzielcze)</li>
+        <li>Instalacje hydrauliczne (łazienki, kuchnia, ogrzewanie podłogowe)</li>
+        <li>Montaż sanitariatów (wanny, prysznice, umywalki, WC)</li>
+        <li>Sufity podwieszone i obudowy GK</li>
+        <li>Drzwi wewnętrzne – dostawa i montaż</li>
+        <li>Stolarka okienna (parapety, rolety, żaluzje)</li>
+        <li>Montaż mebli kuchennych i szaf</li>
+      </ul>
+
+      <h2>Wykończenia wnętrz w Opolu – standardy wykończenia</h2>
+      <h3>Standard Podstawowy</h3>
+      <p>Idealne rozwiązanie dla osób szukających solidnego wykończenia w rozsądnej cenie. Obejmuje wszystkie prace budowlane niezbędne do zamieszkania.</p>
+      <h3>Standard Podwyższony</h3>
+      <p>Wyższe klasy materiałów, większa dbałość o detal. Idealny dla inwestorów pod wynajem lub rodzin szukających komfortowego wnętrza na lata.</p>
+      <h3>Standard Premium</h3>
+      <p>Pełna indywidualizacja, materiały z wyższej półki, współpraca z architektem wnętrz. Dla klientów, którzy chcą wnętrza absolutnie wyjątkowego.</p>
+
+      <h2>Dlaczego warto zlecić wykończenie W&M Budownictwo?</h2>
+      <p>Wybierając naszą firmę budowlaną do wykończenia wnętrz w Opolu, zyskujesz jednego koordynatora dla wszystkich prac – zamiast zarządzać kilkoma różnymi ekipami. Oszczędzasz czas, nerwy i często pieniądze, bo eliminujesz ryzyko błędów wynikających z braku koordynacji.</p>
+    `,
+    faqs: [
+      { q: 'Ile kosztuje wykończenie mieszkania pod klucz w Opolu?', a: 'Cena wykończenia mieszkania w Opolu w stanie deweloperskim zaczyna się od około 800 zł/m² w standardzie podstawowym, 1 200–1 800 zł/m² w standardzie podwyższonym i powyżej 2 000 zł/m² w standardzie premium. Przygotujemy bezpłatny kosztorys po oględzinach.' },
+      { q: 'Jak długo trwa wykończenie mieszkania 60 m²?', a: 'Wykończenie mieszkania o powierzchni 60 m² trwa zazwyczaj od 6 do 12 tygodni, w zależności od zakresu prac i standardu wykończenia. Harmonogram ustalamy indywidualnie przed podpisaniem umowy.' },
+      { q: 'Czy zajmujecie się zakupem materiałów?', a: 'Tak – możemy kompleksowo zająć się zakupem materiałów, co pozwala na lepszą koordynację i często niższe ceny dzięki naszym długoletnim kontraktom z dostawcami. Klient ma pełen wgląd w faktury i może decydować o wyborze materiałów.' },
+      { q: 'Czy współpracujecie z architektami wnętrz?', a: 'Tak, współpracujemy ze sprawdzonymi architektami wnętrz z Opola. Jeżeli klient nie ma jeszcze projektu, możemy go skierować do zaufanego projektanta lub wycenić prace na podstawie własnej koncepcji aranżacji.' },
+    ]
+  })
+},
+
+// ---- SERVICE: REMONTY ----
+'service-remonty': {
+  title: 'Remonty mieszkań Opole – W&M Budownictwo | Kompleksowe',
+  desc: 'Remonty mieszkań i domów w Opolu – kompleksowo lub częściowo. Solidna firma budowlana, terminowość, uczciwe ceny. Darmowa wycena w 24h.',
+  canonical: 'https://wm-budownictwo.pl/remonty-mieszkan-opole',
+  render: () => servicePageTemplate({
+    slug: 'remonty-mieszkan-opole',
+    breadcrumb: 'Remonty Opole',
+    h1: 'Remonty mieszkań Opole – solidnie i na czas',
+    lead: 'Potrzebujesz remontu mieszkania, łazienki, kuchni lub całego domu w Opolu? W&M Budownictwo realizuje remonty mieszkań i domów w Opolu oraz okolicach – kompleksowo lub w wybranym zakresie. Rzetelna wycena, sprawdzona ekipa, pełna gwarancja.',
+    img: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&q=80',
+    imgAlt: 'Remont mieszkania Opole W&M Budownictwo',
+    content: `
+      <h2>Remonty mieszkań i domów w Opolu i województwie opolskim</h2>
+      <p>Remont to zawsze duże wyzwanie logistyczne i organizacyjne. W W&M Budownictwo zajmujemy się tym za Ciebie – koordynujemy wszystkie prace, dbamy o terminowość i porządek na placu pracy, a efekt końcowy zawsze przekazujemy z gwarancją jakości.</p>
+      <p>Realizujemy remonty mieszkań w Opolu, Kędzierzynie-Koźlu, Krapkowicach i w innych miejscowościach województwa opolskiego. Zarówno małe remonty łazienkowe, jak i generalne remonty kamienic czy wielkich mieszkań – każde zlecenie traktujemy z jednakową starannością.</p>
+
+      <h2>Zakres remontów – co robimy?</h2>
+      <ul>
+        <li>Kompleksowe remonty mieszkań od A do Z</li>
+        <li>Remonty łazienek i toalet</li>
+        <li>Remonty kuchni (wymiana płytek, szafek, AGD)</li>
+        <li>Wymiana instalacji elektrycznej i hydraulicznej</li>
+        <li>Skuwanie i układanie nowych płytek ceramicznych</li>
+        <li>Wymiana podłóg (parkiet, panele, LVP, płytki)</li>
+        <li>Prace malarskie – ściany, sufity, drzwi</li>
+        <li>Wyrównywanie i szpachlowanie ścian</li>
+        <li>Wyburzenia i murowanie ścianek działowych</li>
+        <li>Wymiana okien i drzwi wewnętrznych</li>
+        <li>Remonty klatek schodowych i elewacji</li>
+      </ul>
+
+      <h2>Remont łazienki w Opolu – najpopularniejsza usługa</h2>
+      <p>Remont łazienki to najczęstsze zlecenie w naszej firmie. Wykonujemy go kompleksowo – od skucia starych płytek, przez wymianę instalacji, po montaż nowych sanitariatów i wykończenie. Remont standardowej łazienki 5–8 m² trwa zazwyczaj 2–3 tygodnie.</p>
+
+      <h2>Jak zaplanować remont mieszkania w Opolu?</h2>
+      <p>Zacznij od bezpłatnej konsultacji z naszym specjalistą. Przyjedziemy na oględziny, ocenimy stan mieszkania i przygotujemy szczegółowy kosztorys z harmonogramem. Podpiszemy umowę z dokładnym zakresem prac – żadnych niespodzianek w trakcie.</p>
+      <p>Podczas remontu utrzymujemy porządek i minimalizujemy uciążliwości dla mieszkańców. Po zakończeniu prac sprzątamy i przekazujemy mieszkanie gotowe do zamieszkania.</p>
+    `,
+    faqs: [
+      { q: 'Ile kosztuje remont łazienki w Opolu?', a: 'Koszt remontu łazienki w Opolu zaczyna się od około 8 000–12 000 zł za standardową łazienkę 5–7 m² (bez materiałów). Z materiałami i w wyższym standardzie koszt może wynieść 15 000–30 000 zł. Zawsze przygotowujemy bezpłatny kosztorys po oględzinach.' },
+      { q: 'Jak długo trwa generalny remont mieszkania 50 m²?', a: 'Generalny remont mieszkania 50 m² (łazienka, kuchnia, pokoje) trwa zazwyczaj od 8 do 16 tygodni, w zależności od zakresu prac. Remont samej łazienki to 2–3 tygodnie.' },
+      { q: 'Czy można zamieszkać w trakcie remontu?', a: 'To zależy od zakresu remontu. Przy remoncie pojedynczych pomieszczeń (np. łazienki lub kuchni) można pozostać w mieszkaniu. Przy generalnym remoncie całego mieszkania zalecamy tymczasowe wyprowadzenie się dla komfortu i bezpieczeństwa.' },
+      { q: 'Czy W&M Budownictwo udziela gwarancji na remont?', a: 'Tak – na wszystkie wykonane prace remontowe udzielamy pisemnej gwarancji. Szczegóły gwarancji są zawsze opisane w umowie przed rozpoczęciem prac.' },
+    ]
+  })
+},
+
+// ---- SERVICE: NADZOR ----
+'service-nadzor': {
+  title: 'Nadzór budowlany Opole – W&M Budownictwo | Inspektor',
+  desc: 'Nadzór budowlany i inwestorski w Opolu. Kontrola jakości i terminowości budowy. Doświadczony inspektor nadzoru. Skontaktuj się z nami!',
+  canonical: 'https://wm-budownictwo.pl/nadzor-budowlany-opole',
+  render: () => servicePageTemplate({
+    slug: 'nadzor-budowlany-opole',
+    breadcrumb: 'Nadzór budowlany Opole',
+    h1: 'Nadzór budowlany Opole – ochrona Twoich interesów na budowie',
+    lead: 'Budujesz dom w Opolu, ale nie masz pewności, czy prace wykonywane są prawidłowo? Skorzystaj z usługi nadzoru budowlanego W&M Budownictwo. Nasz doświadczony inspektor zadba o jakość, terminowość i zgodność realizacji z projektem.',
+    img: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80',
+    imgAlt: 'Nadzór budowlany Opole inspektor W&M Budownictwo',
+    content: `
+      <h2>Czym jest nadzór budowlany i dlaczego jest ważny?</h2>
+      <p>Nadzór budowlany (inwestorski) to usługa polegająca na kontrolowaniu przebiegu budowy w imieniu inwestora. Inspektor nadzoru weryfikuje jakość wykonywanych prac, zgodność z projektem i normami budowlanymi, terminowość realizacji oraz prawidłowość rozliczeń z wykonawcą.</p>
+      <p>W W&M Budownictwo świadczymy usługi nadzoru inwestorskiego na terenie Opola i województwa opolskiego. Dzięki nam masz pewność, że Twoja budowa jest prowadzona profesjonalnie – nawet jeśli nie masz specjalistycznej wiedzy budowlanej.</p>
+
+      <h2>Zakres nadzoru budowlanego W&M Budownictwo</h2>
+      <ul>
+        <li>Regularne wizyty na placu budowy (według uzgodnionego harmonogramu)</li>
+        <li>Kontrola jakości materiałów i sposobu ich wbudowania</li>
+        <li>Weryfikacja zgodności prac z projektem budowlanym i warunkami pozwolenia</li>
+        <li>Kontrola terminowości realizacji poszczególnych etapów</li>
+        <li>Weryfikacja kosztorysów i faktur wystawianych przez wykonawcę</li>
+        <li>Odbiory częściowe robót budowlanych (fundamenty, strop, dach)</li>
+        <li>Sporządzanie raportów i protokołów z wizyt</li>
+        <li>Udział w naradach koordynacyjnych na budowie</li>
+        <li>Odbiór końcowy budynku</li>
+        <li>Konsultacje telefoniczne dla inwestora przez cały czas trwania projektu</li>
+      </ul>
+
+      <h2>Kiedy warto skorzystać z nadzoru budowlanego?</h2>
+      <p>Nadzór budowlany w Opolu jest szczególnie wskazany gdy: budujesz dom po raz pierwszy i nie znasz się na budowlance; zlecasz budowę firmie, której wcześniej nie znałeś; chcesz mieć pewność, że prace idą zgodnie z projektem; planujesz rozliczać się z wykonawcą etapami i potrzebujesz weryfikacji postępu prac.</p>
+
+      <h2>Nadzór inwestorski a kierownik budowy – różnica</h2>
+      <p>Kierownik budowy jest po stronie wykonawcy i reprezentuje jego interesy. Inspektor nadzoru inwestorskiego z W&M Budownictwo jest po Twojej stronie – działa wyłącznie w Twoim imieniu i pilnuje, by prace były wykonane zgodnie z Twoimi oczekiwaniami i obowiązującymi normami.</p>
+    `,
+    faqs: [
+      { q: 'Ile kosztuje nadzór budowlany w Opolu?', a: 'Koszt nadzoru budowlanego w Opolu zależy od zakresu i czasu trwania projektu. Zazwyczaj wynosi od 2 000 do 8 000 zł za całą budowę domu jednorodzinnego lub od 150 do 300 zł za wizytę kontrolną. Przygotujemy bezpłatną ofertę po poznaniu szczegółów projektu.' },
+      { q: 'Jak często inspektor odwiedza plac budowy?', a: 'Częstotliwość wizyt ustalamy indywidualnie. Standardowo inspektor odwiedza budowę 2–4 razy w miesiącu, a także na wezwanie inwestora lub przy kluczowych odbiorach (fundamenty, stropy, dach). Po każdej wizycie otrzymujesz raport fotograficzny.' },
+      { q: 'Czy nadzór budowlany jest wymagany prawem?', a: 'Nadzór inwestorski nie jest obowiązkowy przy standardowych budowach domów jednorodzinnych, ale organ administracyjny może go wymagać w szczególnych przypadkach. Zawsze jest jednak inwestycją, która chroni Cię przed kosztownymi błędami wykonawcy.' },
+      { q: 'Czy mogę skorzystać z nadzoru, jeśli budowa już trwa?', a: 'Tak – możemy przejąć nadzór nad budową na dowolnym etapie. Przed podpisaniem umowy przeprowadzamy szczegółowy przegląd dotychczasowych prac i informujemy o wszelkich stwierdzonych nieprawidłowościach.' },
+    ]
+  })
+},
+
+// ---- SERVICES ----
+services: {
+  title: 'Usługi budowlane Opole – W&M Budownictwo | Firma budowlana',
+  desc: 'Usługi budowlane W&M Budownictwo Opole: budowa domów, wykończenia wnętrz, remonty mieszkań, nadzór budowlany. Generalny wykonawca Opole.',
+  canonical: 'https://wm-budownictwo.pl/uslugi',
+  render: () => `
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#" onclick="navigate('home')">Strona główna</a> › <span>Usługi</span></div>
+        <div class="label">Co robimy</div>
+        <h1 class="display-lg" style="margin-top:12px;max-width:700px">Usługi budowlane w Opolu i województwie opolskim</h1>
+        <p class="body-lg" style="color:rgba(255,255,255,0.6);margin-top:20px;max-width:600px">Oferujemy pełen zakres usług budowlanych – od budowy domów od podstaw, przez wykończenia wnętrz, po remonty i nadzór budowlany.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="grid-2 fade-in">
+          ${serviceCards('big')}
+        </div>
+      </div>
+    </section>
+    ${ctaBand()}
+  `
+},
+
+// ---- REALIZATIONS ----
+realizations: {
+  title: 'Realizacje – W&M Budownictwo | Projekty budowlane Opole',
+  desc: 'Zobacz realizacje W&M Budownictwo – budowy domów, wykończenia wnętrz i remonty w Opolu i województwie opolskim. Galeria projektów.',
+  canonical: 'https://wm-budownictwo.pl/realizacje',
+  render: () => `
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#" onclick="navigate('home')">Strona główna</a> › <span>Realizacje</span></div>
+        <div class="label">Portfolio</div>
+        <h1 class="display-lg" style="margin-top:12px;max-width:700px">Nasze realizacje – budowy i wykończenia w Opolu i okolicach</h1>
+        <p class="body-lg" style="color:rgba(255,255,255,0.6);margin-top:20px;max-width:600px">Każdy projekt realizujemy z pełnym zaangażowaniem. Poniżej znajdziesz wybrane realizacje – domy, wykończenia wnętrz i remonty zrealizowane przez W&M Budownictwo na terenie województwa opolskiego.</p>
+      </div>
+    </section>
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="gallery-grid fade-in">
+          ${galleryItems()}
+        </div>
+      </div>
+    </section>
+    ${ctaBand()}
+  `
+},
+
+// ---- CONTACT ----
+contact: {
+  title: 'Kontakt – W&M Budownictwo | Firma budowlana Opole',
+  desc: 'Skontaktuj się z W&M Budownictwo. Bezpłatna wycena w 24h. Budowa domów, remonty, wykończenia wnętrz w Opolu. Zadzwoń lub napisz!',
+  canonical: 'https://wm-budownictwo.pl/kontakt',
+  render: () => `
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#" onclick="navigate('home')">Strona główna</a> › <span>Kontakt</span></div>
+        <div class="label">Skontaktuj się z nami</div>
+        <h1 class="display-lg" style="margin-top:12px;max-width:700px">Bezpłatna wycena w 24 godziny – bez zobowiązań</h1>
+        <p class="body-lg" style="color:rgba(255,255,255,0.6);margin-top:20px;max-width:600px">Masz pytanie o budowę domu, remont lub wykończenie wnętrz w Opolu? Skontaktuj się z nami – odpiszemy lub oddzwonimy w ciągu 24 godzin roboczych.</p>
+      </div>
+    </section>
+    <section class="section contact-section">
+      <div class="container">
+        <div class="grid-2 fade-in" style="gap:60px;align-items:start">
+          <div>
+            <div class="label">Dane kontaktowe</div>
+            <h2 class="display-md" style="margin-top:12px;margin-bottom:32px">W&M Budownictwo Opole</h2>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <div class="contact-label">Telefon</div>
+                  <div class="contact-value"><a href="tel:+48000000000">+48 000 000 000</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <div class="contact-label">E-mail</div>
+                  <div class="contact-value"><a href="mailto:biuro@wmbudownictwo.pl">biuro@wmbudownictwo.pl</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <div class="contact-label">Adres</div>
+                  <div class="contact-value">ul. Przykładowa 1<br>45-000 Opole</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">⏰</div>
+                <div>
+                  <div class="contact-label">Godziny pracy</div>
+                  <div class="contact-value">Pon–Pt: 8:00–17:00<br>Sobota: 9:00–14:00</div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📘</div>
+                <div>
+                  <div class="contact-label">Facebook</div>
+                  <div class="contact-value"><a href="https://www.facebook.com" target="_blank">W&M Budownictwo</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="map-embed" style="margin-top:32px">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80000!2d17.9213!3d50.6751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47104218a24c5099%3A0x4cc96e7b4a96e397!2sOpole!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - W&M Budownictwo Opole"></iframe>
+            </div>
+          </div>
+          <div class="fade-in fade-in-delay-1">
+            <div class="form-card">
+              <div class="form-title">Zapytaj o wycenę</div>
+              <div class="form-sub">Wypełnij formularz – odpiszemy w ciągu 24 godzin roboczych. Wycena jest bezpłatna i nie zobowiązuje do niczego.</div>
+              ${fullForm()}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-sm area-section">
+      <div class="container text-center">
+        <div class="label">Obszar działania</div>
+        <h2 class="display-md" style="margin-top:12px;margin-bottom:24px">Firma budowlana Opole – działamy w całym woj. opolskim</h2>
+        <div class="area-tags" style="justify-content:center">
+          <span class="area-tag featured">Opole</span>
+          <span class="area-tag">Kędzierzyn-Koźle</span>
+          <span class="area-tag">Krapkowice</span>
+          <span class="area-tag">Brzeg</span>
+          <span class="area-tag">Kluczbork</span>
+          <span class="area-tag">Nysa</span>
+          <span class="area-tag">Prudnik</span>
+          <span class="area-tag">Strzelce Opolskie</span>
+          <span class="area-tag">Namysłów</span>
+          <span class="area-tag">Głubczyce</span>
+          <span class="area-tag">Olesno</span>
+          <span class="area-tag">Dojeżdżamy do 100 km</span>
+        </div>
+      </div>
+    </section>
+  `
+}
+
+};
+
+// ============================================================
+// COMPONENTS
+// ============================================================
+
+function serviceCards(mode) {
+  const svcs = [
+    { key:'service-dom', icon:'🏗️', num:'01', title:'Budowa domów Opole', desc:'Kompleksowa budowa domów jednorodzinnych od fundamentów po wykończenie. Generalny wykonawca w woj. opolskim.', img:'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80' },
+    { key:'service-wykon', icon:'🎨', num:'02', title:'Wykończenia wnętrz Opole', desc:'Mieszkania i domy wykończone pod klucz. Kafelkowanie, malowanie, podłogi, instalacje – kompleksowo.', img:'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80' },
+    { key:'service-remonty', icon:'🔧', num:'03', title:'Remonty mieszkań Opole', desc:'Generalne remonty mieszkań i domów, remonty łazienek, kuchni. Solidna ekipa, terminowość, gwarancja.', img:'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80' },
+    { key:'service-nadzor', icon:'📋', num:'04', title:'Nadzór budowlany Opole', desc:'Inspektor nadzoru po Twojej stronie. Kontrola jakości, terminowości i kosztów realizacji budowy.', img:'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80' },
+  ];
+  return svcs.map(s => `
+    <div class="service-card" onclick="navigate('${s.key}')">
+      <div class="service-card-img">
+        <img src="${s.img}" alt="${s.title}" loading="lazy">
+      </div>
+      <div class="service-card-body">
+        <div class="service-card-num">${s.num}</div>
+        <h3>${s.title}</h3>
+        <p>${s.desc}</p>
+        <div class="service-card-link">Dowiedz się więcej <span>→</span></div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function galleryItems() {
+  const items = [
+    { img:'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80', title:'Dom jednorodzinny', desc:'Opole Grotowice – 180 m²' },
+    { img:'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80', title:'Wykończenie pod klucz', desc:'Opole Centrum – 75 m²' },
+    { img:'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80', title:'Remont mieszkania', desc:'Kędzierzyn-Koźle – 60 m²' },
+    { img:'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=80', title:'Kuchnia premium', desc:'Krapkowice – premium' },
+    { img:'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=600&q=80', title:'Dom energooszczędny', desc:'Brzeg – 140 m²' },
+    { img:'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=600&q=80', title:'Remont łazienki', desc:'Opole – 8 m²' },
+    { img:'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80', title:'Budowa – stan surowy', desc:'Kluczbork – 160 m²' },
+    { img:'https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=600&q=80', title:'Salon i jadalnią', desc:'Nysa – aranżacja premium' },
+    { img:'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80', title:'Kuchnia otwarta', desc:'Strzelce Opolskie – modernizacja' },
+  ];
+  return items.map(i => `
+    <div class="gallery-item">
+      <img src="${i.img}" alt="${i.title} - W&M Budownictwo Opole" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div>
+          <div class="gallery-item-title">${i.title}</div>
+          <div class="gallery-item-desc">${i.desc}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function ctaBand() {
+  return `
+    <section class="cta-band">
+      <div class="container">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:32px;">
+          <div>
+            <h2>Zacznij budowę lub remont<br>w Opolu z W&M Budownictwo</h2>
+            <p>Darmowa wycena w 24 godziny. Bez zobowiązań. Twój projekt, nasza odpowiedzialność.</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <a href="#" class="btn btn-dark" onclick="navigate('contact')">Bezpłatna wycena →</a>
+              <a href="tel:+48000000000" class="btn-outline-dark">📞 Zadzwoń teraz</a>
+            </div>
+            <div class="trust-badges">
+              <div class="trust-badge"><div class="trust-badge-icon">✅</div><span>Bezpłatna wycena</span></div>
+              <div class="trust-badge"><div class="trust-badge-icon">⏱️</div><span>Odpowiedź w 24h</span></div>
+              <div class="trust-badge"><div class="trust-badge-icon">🔒</div><span>Bez zobowiązań</span></div>
+              <div class="trust-badge"><div class="trust-badge-icon">📝</div><span>Pełna gwarancja</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function quickForm() {
+  return `
+    <div class="form-title">Darmowa wycena w 24h</div>
+    <div class="form-sub">Opisz swój projekt – odpiszemy błyskawicznie.</div>
+    <div class="form-group">
+      <label>Imię i nazwisko</label>
+      <input type="text" placeholder="Jan Kowalski">
+    </div>
+    <div class="form-group">
+      <label>Telefon</label>
+      <input type="tel" placeholder="+48 000 000 000">
+    </div>
+    <div class="form-group">
+      <label>Usługa</label>
+      <select>
+        <option>Budowa domu</option>
+        <option>Wykończenie wnętrz</option>
+        <option>Remont</option>
+        <option>Nadzór budowlany</option>
+        <option>Inna</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm(this)">Wyślij zapytanie →</button>
+    <div class="form-promise"><span class="form-promise-icon">🔒</span><span>Bez zobowiązań. Odpowiadamy w 24h.</span></div>
+  `;
+}
+
+function fullForm() {
+  return `
+    <div class="form-row">
+      <div class="form-group">
+        <label>Imię i nazwisko *</label>
+        <input type="text" placeholder="Jan Kowalski">
+      </div>
+      <div class="form-group">
+        <label>Telefon *</label>
+        <input type="tel" placeholder="+48 000 000 000">
+      </div>
+    </div>
+    <div class="form-group">
+      <label>E-mail</label>
+      <input type="email" placeholder="jan@email.pl">
+    </div>
+    <div class="form-group">
+      <label>Rodzaj usługi *</label>
+      <select>
+        <option value="">Wybierz usługę...</option>
+        <option>Budowa domu jednorodzinnego</option>
+        <option>Wykończenie wnętrz pod klucz</option>
+        <option>Remont mieszkania</option>
+        <option>Remont łazienki</option>
+        <option>Nadzór budowlany</option>
+        <option>Inna usługa</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Lokalizacja inwestycji</label>
+      <input type="text" placeholder="np. Opole, Krapkowice, Brzeg...">
+    </div>
+    <div class="form-group">
+      <label>Opis projektu</label>
+      <textarea placeholder="Opisz swój projekt, planowany zakres prac, przybliżoną powierzchnię, termin realizacji..."></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm(this)">Wyślij zapytanie o wycenę →</button>
+    <div class="form-promise"><span class="form-promise-icon">🔒</span><span>Bezpłatna wycena, bez zobowiązań. Odpowiadamy w ciągu 24h roboczych.</span></div>
+  `;
+}
+
+function servicePageTemplate({ slug, breadcrumb, h1, lead, img, imgAlt, content, faqs }) {
+  return `
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="#" onclick="navigate('home')">Strona główna</a> › <a href="#" onclick="navigate('services')">Usługi</a> › <span>${breadcrumb}</span></div>
+        <h1 class="display-lg" style="margin-top:12px;max-width:800px">${h1}</h1>
+        <p class="body-lg" style="color:rgba(255,255,255,0.6);margin-top:20px;max-width:640px">${lead}</p>
+        <div style="display:flex;gap:12px;margin-top:32px;flex-wrap:wrap">
+          <a href="#" class="btn btn-primary" onclick="navigate('contact')">Bezpłatna wycena →</a>
+          <a href="tel:+48000000000" class="btn btn-outline">📞 Zadzwoń teraz</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section service-page-content">
+      <div class="container">
+        <div class="content-cols">
+          <div class="content-main fade-in">
+            <img src="${img}" alt="${imgAlt}" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:2px;margin-bottom:40px">
+            ${content}
+          </div>
+          <div class="fade-in fade-in-delay-1">
+            <div class="sidebar-card">
+              <h3>Zapytaj o wycenę</h3>
+              ${quickForm()}
+            </div>
+            <div class="sidebar-card">
+              <h3>Dane kontaktowe</h3>
+              <div class="sidebar-contact-item">
+                <span>📞</span>
+                <div>
+                  <div style="font-size:0.75rem;color:var(--gold);text-transform:uppercase;letter-spacing:0.1em;font-weight:600">Telefon</div>
+                  <a href="tel:+48000000000" style="font-weight:600;color:var(--dark)">+48 000 000 000</a>
+                </div>
+              </div>
+              <div class="sidebar-contact-item">
+                <span>✉️</span>
+                <div>
+                  <div style="font-size:0.75rem;color:var(--gold);text-transform:uppercase;letter-spacing:0.1em;font-weight:600">E-mail</div>
+                  <a href="mailto:biuro@wmbudownictwo.pl" style="font-weight:600;color:var(--dark)">biuro@wmbudownictwo.pl</a>
+                </div>
+              </div>
+              <div class="sidebar-contact-item">
+                <span>⏰</span>
+                <div>
+                  <div style="font-size:0.75rem;color:var(--gold);text-transform:uppercase;letter-spacing:0.1em;font-weight:600">Godziny</div>
+                  <div style="font-weight:500;color:var(--dark);font-size:0.875rem">Pon–Pt 8:00–17:00</div>
+                </div>
+              </div>
+            </div>
+            <div style="background:var(--dark);border-radius:2px;padding:24px;text-align:center">
+              <div style="font-size:2.5rem;margin-bottom:8px">⭐</div>
+              <div style="color:var(--gold);font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px">Opinie klientów</div>
+              <div style="color:var(--white);font-family:var(--ff-display);font-size:2rem;font-weight:900">5.0/5</div>
+              <div style="color:rgba(255,255,255,0.5);font-size:0.8rem;margin-top:4px">na podstawie opinii Google</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <div class="label">FAQ</div>
+          <h2 class="display-lg" style="margin-top:12px">Najczęściej zadawane pytania</h2>
+        </div>
+        <div style="max-width:800px;margin:0 auto" class="fade-in">
+          ${faqs.map((f,i) => `
+            <div class="faq-item">
+              <div class="faq-q" onclick="toggleFaq(this)">
+                <span>${f.q}</span>
+                <span class="icon">+</span>
+              </div>
+              <div class="faq-a"><div class="faq-a-inner">${f.a}</div></div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+
+    ${ctaBand()}
+  `;
+}
+
+// ============================================================
+// ROUTER
+// ============================================================
+
+let currentPage = 'home';
+
+function navigate(page) {
+  currentPage = page;
+  const p = pages[page];
+  if (!p) return;
+
+  document.getElementById('page-title').textContent = p.title;
+  document.getElementById('page-desc').setAttribute('content', p.desc);
+  document.getElementById('page-canonical').setAttribute('href', p.canonical);
+
+  const main = document.getElementById('main-content');
+  main.style.opacity = '0';
+  main.style.transform = 'translateY(10px)';
+  
+  setTimeout(() => {
+    main.innerHTML = p.render();
+    main.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    main.style.opacity = '1';
+    main.style.transform = 'translateY(0)';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    initFadeIns();
+    updateNavLinks();
+    setNavStyle();
+  }, 200);
+  
+  // Update URL hash
+  history.pushState({page}, '', '#' + page.replace('service-dom','budowa-domow-opole')
+    .replace('service-wykon','wykonczenia-wnetrz-opole')
+    .replace('service-remonty','remonty-mieszkan-opole')
+    .replace('service-nadzor','nadzor-budowlany-opole')
+  );
+  
+  return false;
+}
+
+function updateNavLinks() {
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+  const map = { home: 0, about: 1, services: 2, 'service-dom': 2, 'service-wykon': 2, 'service-remonty': 2, 'service-nadzor': 2, realizations: 3, contact: 4 };
+  const idx = map[currentPage];
+  if (idx !== undefined) {
+    const links = document.querySelectorAll('.nav-link');
+    if (links[idx]) links[idx].classList.add('active');
+  }
+}
+
+// ============================================================
+// NAV
+// ============================================================
+
+function setNavStyle() {
+  const nav = document.getElementById('navbar');
+  if (currentPage !== 'home') {
+    nav.classList.remove('transparent');
+    nav.classList.add('scrolled');
+  } else {
+    const scrolled = window.scrollY > 80;
+    nav.classList.toggle('scrolled', scrolled);
+    nav.classList.toggle('transparent', !scrolled);
+  }
+}
+
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (currentPage === 'home') {
+    nav.classList.toggle('scrolled', window.scrollY > 80);
+    nav.classList.toggle('transparent', window.scrollY <= 80);
+  }
+});
+
+function toggleMobile() {
+  const mob = document.getElementById('mobileNav');
+  mob.classList.toggle('open');
+}
+
+// ============================================================
+// FAQ
+// ============================================================
+
+function toggleFaq(el) {
+  const item = el.closest('.faq-item');
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+// ============================================================
+// FORM
+// ============================================================
+
+function submitForm(btn) {
+  btn.textContent = 'Wysyłanie...';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = '✅ Wysłano! Odezwiemy się w 24h.';
+    btn.style.background = '#4CAF50';
+    showToast();
+    setTimeout(() => {
+      btn.textContent = 'Wyślij zapytanie →';
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 4000);
+  }, 1200);
+}
+
+function showToast() {
+  const t = document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 4000);
+}
+
+// ============================================================
+// FADE IN OBSERVER
+// ============================================================
+
+function initFadeIns() {
+  const els = document.querySelectorAll('.fade-in');
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    els.forEach(el => obs.observe(el));
+  } else {
+    els.forEach(el => el.classList.add('visible'));
+  }
+}
+
+// ============================================================
+// INIT
+// ============================================================
+
+document.addEventListener('DOMContentLoaded', () => {
+  navigate('home');
+});
+</script>
+</body>
+</html>
